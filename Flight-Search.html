@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Search</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:#eef5ff;
+        }
+        nav{
+            background:white;
+            padding:18px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            box-shadow:0 2px 8px rgba(0,0,0,.08);
+        }
+        nav h2{color:#1634b8;margin:0;}
+        nav a{text-decoration:none;color:#333;margin:0 15px;}
+        .hero{
+            width:85%;
+            margin:40px auto;
+            background:white;
+            border-radius:20px;
+            padding:30px;
+            box-shadow:0 4px 15px rgba(0,0,0,.1);
+        }
+        h1{color:#223366;font-size:42px;}
+        .tabs button{
+            padding:12px 30px;
+            border:none;
+            background:#e5e9f7;
+            cursor:pointer;
+            font-size:16px;
+            border-radius:8px;
+        }
+        .tabs .active{background:#1837c7;color:white;}
+        .form-row{
+            display:grid;
+            grid-template-columns:repeat(6,1fr);
+            gap:15px;
+            margin-top:25px;
+        }
+        .box{
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:15px;
+            background:white;
+        }
+        input,select{
+            width:100%;
+            border:none;
+            outline:none;
+            margin-top:8px;
+            font-size:15px;
+        }
+        .search{
+            margin-top:25px;
+            text-align:right;
+        }
+        .search button{
+            background:#1634b8;
+            color:white;
+            border:none;
+            padding:14px 40px;
+            border-radius:8px;
+            font-size:18px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<nav>
+<h2>FlyGo</h2>
+<div>
+<a href="#">Book</a>
+<a href="#">Trips</a>
+<a href="#">Check-in</a>
+<a href="#">Offers</a>
+</div>
+</nav>
+<div class="hero">
+<h1>Plan your journey, your way</h1>
+<div class="tabs">
+<button class="active">Flights</button>
+</div>
+<form>
+<div class="form-row">
+<div class="box"><label>From</label><input type="text" placeholder="Delhi"></div>
+<div class="box"><label>To</label><input type="text" placeholder="Destination"></div>
+<div class="box"><label>Departure</label><input type="date"></div>
+<div class="box"><label>Return</label><input type="date"></div>
+<div class="box">
+    <label>Passengers</label>
+    <select>
+        <option>1 Passenger</option>
+        <option>2 Passengers</option>
+        <option>3 Passengers</option>
+    </select>
+</div>
+<div class="box">
+    <label>Class</label>
+    <select>
+        <option>Economy</option>
+        <option>Premium Economy</option>
+        <option>Business</option>
+        <option>First Class</option>
+    </select>
+</div>
+</div>
+<div class="search"><button type="submit">Search Flights</button></div>
+</form>
+</div>
+</body>
+</html>
